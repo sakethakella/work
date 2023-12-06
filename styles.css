@@ -1,0 +1,373 @@
+body{
+    margin:0;
+    background-color: rgb(4, 4, 18);
+    scroll-behavior: smooth !important;
+}
+
+.header{
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3vw;
+  width: 100%;
+  height:auto;
+  box-shadow: 5px 5px 40px rgb(6, 172, 214);
+  background-image: linear-gradient(to right,rgb(255, 249, 249),rgb(255, 255, 255));
+  align-items: center;
+  position: fixed;
+  top:0;
+  left:0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header_elements{
+   padding:8px 16px;
+   margin:0;
+   background:transparent;
+   color:black;
+}
+.header_elements:hover{
+    background-color: green;
+}
+.header_elements a{
+    color:black;
+    text-decoration: none;
+}
+.header_elements a:hover{
+    color:yellow;
+    text-decoration: none;
+}
+
+.dropdown{
+    display:none;
+    position: absolute;
+    background-color:rgb(4, 4, 78);
+    color:white;
+    font-size: 2vw;
+    text-decoration: none;
+    width:auto;
+    height:auto;
+    text-align: center;
+    border-radius: 5px;
+    padding:8px 16px;
+    margin:1;
+}
+.header_elements:hover .dropdown{
+    display: block;
+    box-shadow: 5px 5px 20px rgb(6, 172, 214);
+}
+
+.dropdown a{
+    color:white;
+    text-decoration: none;
+    scroll-behavior:smooth;
+}
+.dropdown a:hover{
+    color:skyblue;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+hr{
+    border: 1px solid white;
+}
+.intropage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(240, 255, 255, 0.2);
+    width: 85%;
+    height:auto;
+    text-align: center;
+    overflow:visible;
+    margin: 3%;
+    border-radius: 10px;
+    padding:5% 5%;
+}
+.intropage_elements{
+    width:40%;
+    height:40vw;
+    padding: 2px;
+    color:white;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    box-shadow: 5px 5px 20px plum;
+    background-color: rgb(4, 4, 18);
+}
+.intropage_elements:hover{
+    transform: scale(1.05,1.05);
+    color:yellow;
+    box-shadow: 5px 5px 20px yellow;
+}
+@keyframes box{
+    0%{box-shadow: 5px 5px 20px rgb(6, 172, 214) ;}
+    25%{box-shadow: 5px 5px 20px rgb(4, 249, 4);}
+    50%{box-shadow: 5px 5px 20px yellow;}
+    75%{box-shadow:5px 5px 20px plum;}
+    100%{box-shadow:5px 5px 20px red;}
+}
+.bestselling{
+    color:white;
+}
+a{
+    scroll-behavior: smooth !important;
+    scroll-padding:5rem;
+}
+#button{
+    background-color: rgb(10, 245, 10);
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow:2px 2px 20px yellow;
+    margin: 2% 2%;
+    color:brown;
+    text-indent: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 16px;
+}
+#button:hover{
+    background-color: rgb(86, 248, 86);
+    color:rgb(229, 32, 32);
+    box-shadow:2px 2px 20px red ;
+}
+#text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bestselling{
+    display: grid;
+    row-gap: 5vw;
+    column-gap: 3vw;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+    width: 85%;
+    height:auto;
+    text-align: center;
+    overflow:visible;
+    margin: 3%;
+    border-radius: 10px;
+    padding:5% 5%;
+    background-color:rgba(240, 255, 255, 0.2);
+    overflow: visible;
+}
+.bestselling_element{
+    background-color:rgb(4, 4, 18);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    color:rgb(240, 114, 240);
+    border-radius: 10px;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    padding:2%;
+    text-align: center;
+
+}
+.bestselling_element:hover{
+    color:yellow;
+    transform: scale(1.05,1.05);
+    box-shadow: 5px 5px 20px yellow;
+}
+.button1{
+    background-color: rgb(10, 245, 10);
+    font-size: 1.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow:2px 2px 20px yellow;
+    margin: 2% 2%;
+    color:brown;
+    text-indent: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 16px;
+}
+.button1:hover{
+    background-color: rgb(86, 248, 86);
+    color:rgb(229, 32, 32);
+    box-shadow:2px 2px 20px red ;
+}
+.recommendedsection{
+    display: grid;
+    row-gap: 5vw;
+    column-gap: 3vw;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+    width: 85%;
+    height:auto;
+    text-align: center;
+    overflow:visible;
+    margin: 3%;
+    border-radius: 10px;
+    padding:5% 5%;
+    background-color:rgba(240, 255, 255, 0.2);
+    overflow: visible;
+}
+.recommendedsection_elements{
+    background-color:rgb(4, 4, 18);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    color:rgb(240, 114, 240);
+    padding: 2%;
+    border-radius: 10px;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    padding:2%;
+    text-align: center;
+
+}
+.recommendedsection_elements:hover{
+    color:yellow;
+    transform: scale(1.05,1.05);
+    box-shadow: 5px 5px 20px yellow;   
+}
+#search_bar{
+    width: 85%;
+    height: 3vw;
+    font-size: 2vw;
+    box-shadow: 5px 5px 10px yellow;
+    transition: 0.5s;
+}
+#search_bar:hover{
+    transform: scale(1.05,1.05);
+}
+.review_Section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(240, 255, 255, 0.2);
+    width: 85%;
+    height:auto;
+    text-align: center;
+    overflow:visible;
+    margin: 3%;
+    border-radius: 10px;
+    padding:5% 5%;
+}
+.review_Section_element{
+    width:40%;
+    height:40vw;
+    padding: 2px;
+    color:white;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    box-shadow: 5px 5px 20px plum;
+    background-color:rgb(4, 4, 18);
+}
+.review_Section_element:hover{
+    transform: scale(1.05,1.05);
+    color:yellow;
+    box-shadow: 5px 5px 20px yellow;
+}
+form{
+    padding:1vw;
+    margin:2vw;
+    background-image:radial-gradient(rgb(253, 135, 0),rgb(246, 174, 91));
+}
+.form_elements{
+    padding: 1vw;
+    margin:1vw;
+    font-size: 2vw;
+    color:rgb(125, 2, 2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+form>label{
+    font-size: 2vw;
+    color:rgb(125, 2, 2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+input{
+   width:100%;
+   height:2vw;
+   border-radius: 2vw;
+   box-shadow: 2px 2px 10px black;
+   font-size: 1.5vw;
+   padding:0.5vw;
+   transition: 0.5s;
+}
+input[type=submit]{
+    background-color: rgb(4, 4, 156);
+    color:white;
+    font-size:2vw;
+    height:auto;
+
+}
+input[type=submit]:hover{
+    background-color: rgb(17, 17, 69);
+    color:yellow;
+}
+input:hover{
+  transform: scale(1.05,1.05);
+}
+textarea{
+    transition: 0.5s;
+}
+textarea:hover{
+    transform: scale(1.05,1.05);
+}
+.review_Section_element1{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  row-gap: 1vw;
+  column-gap: 0.5vw;
+  justify-content: space-evenly;
+  align-items: center;
+  width:40%;
+  height:40vw;
+  text-align: center;
+  overflow:scroll;
+  margin: 3%;
+  border-radius: 10px;
+  padding:5% 5%;
+  background-color:rgba(240, 255, 255, 0.2);
+}
+.review_Section_element1_element{
+    background-color:rgb(4, 4, 18);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+    color:rgb(240, 114, 240);
+    padding: 2%;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding:2%;
+    text-align: center;
+    height:auto;
+    box-shadow: 1px 1px 10px plum;
+}
+.review_Section_element1_element:hover{
+    transform: scale(1.05,1.05);
+    color:yellow;
+    box-shadow: 1px 1px 10px yellow;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 249, 249);
+    width:100%;
+    height:auto;
+    position: relative;
+    bottom:0;
+    text-align: center;
+    padding:3%;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_elements{
+    padding:1%;
+    font-size: 2vw;
+}

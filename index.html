@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saketh's books</title>
+    <link rel="icon" href="book.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_elements">
+            <img src="book.jpg" style="width:3vw;height:3vw">
+        </div>
+        <div class="header_elements">
+            <a href="#1"><b>Intro Section</b></a>
+        </div>
+        <div class="header_elements">
+            <a href="#2"><b>Books</b></a>
+            <div class="dropdown">
+                <a href="#2">Best Selling Books</a>
+            
+            <hr>
+            
+                <a href="#3">Our Recomdations Section</a>
+            
+            </div>
+        </div>
+        <div class="header_elements">
+            <a href="#4"><b>Review Section</b></a>
+        </div>
+        <div class="header_elements">
+            <a href="#5"><b>Footer</b></a>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="intropage" id="1">
+        <div class="intropage_elements">
+            <img src="shop.jpg" style="width:100%; height:100%;">
+        </div>
+        <div class="intropage_elements" style="text-align: center;text-indent: 5px;">
+            <h1 style="font-size: 6vw;">Saketh's Book Shop</h1>
+            <p style="font-size: 2vw;">-All books at one place</p>
+            
+            <a href="#2" style="scroll-behavior: smooth;">
+                <button id="button" onmouseenter="document.getElementById('text').innerHTML='please click here to view our best selling books'" onmouseleave="document.getElementById('text').innerHTML=''"><b>Our Best selling Books</b></button></a>
+                <p id="text"></p>
+            </div>
+    </div>
+    <div class="bestselling" id="2">
+       <div class="bestselling_element" style="grid-column: 1/3;">
+         
+         <h1>Best selling Books</h1>
+         <p style="font-size: 2vw;"><i>-"the books that will make your mind crazy"</i></p>
+       </div>
+       <div class="bestselling_element" onmouseenter="document.getElementById('text1').innerHTML='Book cost:$ 2.00'">
+        <button style="display: inline; float: left;" onclick="document.getElementById('button1').textContent='Added'" id="button1" class="button1"><b>add+</b><title>will add extra books</title></button>
+          <img src="https://m.media-amazon.com/images/I/71-++hbbERL._AC_UF1000,1000_QL80_.jpg" style="width:100%;height:40vw;border-radius: 5px;">
+          <p style="font-size: 2vw;"><b>Harry Potter and sorcsseor's stone</b></p>
+          <p style="font-size: 1.5vw;color: skyblue;"><i>-Fiction</i></p>
+          <p id="text1" style="font-size: 1.5vw;color:aquamarine;"></p>
+         </div>
+       <div class="bestselling_element" onmouseenter="document.getElementById('text2').innerHTML='Book cost:$ 2.50'">
+        <button style="display: inline; float: left;" onclick="document.getElementById('button2').textContent='Added'" id="button2" class="button1"><b>add+</b><title>will add extra books</title></button>
+        <img src="https://ew.com/thmb/rvat6WP-MplFuFNA4xJ-aGKEADc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9781408855652-png-c57764456b554308ae1398474caab3c2.jpg" style="width:100%;height:40vw;border-radius: 5px;">
+        <p style="font-size: 2vw;"><b>Harry potter and Philospher's stone</b></p>
+        <p style="font-size: 1.5vw;color: skyblue;"><i>-Fiction</i></p>
+        <p id="text2" style="font-size: 1.5vw;color:aquamarine;"></p>
+    </div>
+       <div class="bestselling_element" onmouseenter="document.getElementById('text3').innerHTML='Book Cost:$ 4.00'">
+        <button style="display: inline; float: left;" onclick="document.getElementById('button3').textContent='Added'" id="button3" class="button1"><b>add+</b><title>will add extra books</title></button>
+        <img src="https://static01.nyt.com/images/2022/12/11/books/review/08NotableBookCovers/08NotableBookCovers-articleLarge.jpg?quality=75&auto=webp&disable=upscale" style="height:40vw;width:100%;border-radius: 5px;">
+        <p style="font-size: 2vw;"><b>Shit Cassandra Saw</b></p>
+        <p style="font-size: 1.5vw;color: skyblue;"><i>- Non-Fiction</i></p>
+        <p id="text3" style="font-size: 1.5vw;color:aquamarine;"></p>
+       </div>
+       <div class="bestselling_element" onmouseenter="document.getElementById('text4').innerHTML='Book Cost:$ 5.00'">
+        <button style="display: inline; float: left;" onclick="document.getElementById('button4').textContent='Added'" id="button4" class="button1"><b>add+</b><title>will add extra books</title></button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nNTRoHLNRlEpD-1M5TYwXpa167wlinCYUw&usqp=CAU" style="width:100%;height:40vw;border-radius: 5px;">
+        <p style="font-size: 2vw;"><b>Abandoned Kingdom</b></p>
+        <p style="font-size: 1.5vw;color: skyblue;"><i>-Fiction</i></p>
+        <p id="text4" style="font-size: 1.5vw;color:aquamarine;"></p>
+    </div>
+    </div>
+    <div class="recommendedsection" id="3">
+        <div class="recommendedsection_elements" style="grid-column: 1/3;">
+            <h1>Our Recomdation Section</h1>
+            <p><i>- one of the finest books in world</i></p>
+            <input id="search_bar" placeholder="Search For Books" name="search_bar">
+        </div>
+        <div class="recommendedsection_elements" onmouseenter="document.getElementById('text5').innerHTML='Book Cost:$ 2.00'">
+            <button style="display: inline; float: left;" onclick="document.getElementById('button5').textContent='Added'" id="button5" class="button1"><b>add+</b><title>will add extra books</title></button>
+            <img src="https://m.media-amazon.com/images/I/71-++hbbERL._AC_UF1000,1000_QL80_.jpg" style="width:100%;height:40vw;border-radius: 5px;">
+            <p style="font-size: 2vw;"><b>Harry Potter and sorcsseor's stone</b></p>
+            <p style="font-size: 1.5vw;color: skyblue;"><i>-Fiction</i></p>
+            <p id="text5" style="font-size: 1.5vw;color:aquamarine;"></p>
+        </div>
+        <div class="recommendedsection_elements" onmouseenter="document.getElementById('text6').innerHTML='Book Cost:$ 2.50'">
+            <button style="display: inline; float: left;" onclick="document.getElementById('button6').textContent='Added'" id="button6" class="button1"><b>add+</b><title>will add extra books</title></button>
+            <img src="https://ew.com/thmb/rvat6WP-MplFuFNA4xJ-aGKEADc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9781408855652-png-c57764456b554308ae1398474caab3c2.jpg" style="width:100%;height:40vw;border-radius: 5px;">
+            <p style="font-size: 2vw;"><b>Harry potter and Philospher's stone</b></p>
+            <p style="font-size: 1.5vw;color: skyblue;"><i>-Fiction</i></p>
+            <p id="text6" style="font-size: 1.5vw;color:aquamarine;"></p>    
+        </div>
+        <div class="recommendedsection_elements" onmouseenter="document.getElementById('text7').innerHTML='Book Cost:$ 3.00'">
+            <button style="display: inline; float: left;" onclick="document.getElementById('button7').textContent='Added'" id="button7" class="button1"><b>add+</b><title>will add extra books</title></button>
+        <img src="https://static01.nyt.com/images/2022/12/11/books/review/08NotableBookCovers/08NotableBookCovers-articleLarge.jpg?quality=75&auto=webp&disable=upscale" style="height:40vw;width:100%;border-radius: 5px;">
+        <p style="font-size: 2vw;"><b>Shit Cassandra Saw</b></p>
+        <p style="font-size: 1.5vw;color: skyblue;"><i>- Non-Fiction</i></p>
+        <p id="text7" style="font-size: 1.5vw;color:aquamarine;"></p>
+        </div>
+        <div class="recommendedsection_elements" onmouseenter="document.getElementById('text8').innerHTML='Book Cost:$ 4.00'">
+            <button style="display: inline; float: left;" onclick="document.getElementById('button8').textContent='Added'" id="button8" class="button1"><b>add+</b><title>will add extra books</title></button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nNTRoHLNRlEpD-1M5TYwXpa167wlinCYUw&usqp=CAU" style="width:100%;height:40vw;border-radius: 5px;">
+        <p style="font-size: 2vw;"><b>Abandoned Kingdom</b></p>
+        <p style="font-size: 1.5vw;color: skyblue;"><i>-Fiction</i></p>
+        <p id="text8" style="font-size: 1.5vw;color:aquamarine;"></p>
+        </div>
+    </div>
+    <div class="review_Section" id="4">
+      <div class="review_Section_element1" style="overflow-y: scroll;">
+        <div class="review_Section_element1_element" style="grid-column: 1/3;">
+            <h1>Reviews By other People</h1>
+        </div>
+          <div class="review_Section_element1_element">
+            <img src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png" style="width:2.5vw;height:2.5vw;">
+          </div>
+          <div class="review_Section_element1_element" >
+              <h1>Review by jake</h1>
+          </div>
+          <div class="review_Section_element1_element" style="grid-column: 1/3;">
+            <p>This is a very good Book Store and people should visit anf buy books here</p>
+           </div>
+           <div class="review_Section_element1_element">
+            <img src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png" style="width:2.5vw;height:2.5vw;">
+          </div>
+          <div class="review_Section_element1_element" >
+              <h1>Review by john</h1>
+          </div>
+          <div class="review_Section_element1_element" style="grid-column: 1/3;">
+            <p>nice store with good books and good website</p>
+           </div>
+           <div class="review_Section_element1_element">
+            <img src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png" style="width:2.5vw;height:2.5vw;">
+          </div>
+          <div class="review_Section_element1_element" >
+              <h1>Review by jacob</h1>
+          </div>
+          <div class="review_Section_element1_element" style="grid-column: 1/3;">
+            <p>make me happy to find many books here</p>
+           </div>
+           <div class="review_Section_element1_element">
+            <img src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png" style="width:2.5vw;height:2.5vw;">
+          </div>
+          <div class="review_Section_element1_element" >
+              <h1>Review by sohith</h1>
+          </div>
+          <div class="review_Section_element1_element" style="grid-column: 1/3;">
+            <p>perfect destination for book lovers</p>
+           </div>
+       </div>
+      <div class="review_Section_element" style="overflow-y: scroll;">
+        <form>
+            <label>Write your review</label>
+            <div class="form_elements">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="enter your name" required>
+            </div>
+            <div class="form_elements">
+                <label for="number">Mobile No.:</label>
+                <input type="number" id="number" placeholder="enter your mobile number" required>
+            </div>
+            <div class="form_elements">
+                <label for="email">E-Mail Id:</label>
+                <input type="email" id="email" placeholder="enter your email id" required>
+            </div>
+            <div class="form_elements">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form_elements">
+                <label for="review_">Review:</label>
+                <textarea id="review_" rows="4"required style="border-radius: 1vw; width:100%;"></textarea>
+            </div>
+            <div class="form_elements">
+                <input type="submit">
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer" id="5">
+       <div class="footer_elements"><a href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></div>
+       <div class="footer_elements"><a href="www.whatsappp.com" target="_blank"><i class="fa fa-whatsapp"></i></a></div>
+       <div class="footer_elements"><a href="www.instagram.com" target="_blank"><i class="fa fa-instagram" ></i></a></div>
+       <div class="footer_elements"><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></div>
+       <div class="footer_elements"><a href="#1" style="scroll-behavior: smooth;"><i class="fa fa-cloud" title="take you back to top"></i></a></div>
+    </div>
+</body>
+</html>
